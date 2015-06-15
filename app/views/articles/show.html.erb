@@ -14,6 +14,10 @@
     </br>
   <% end %>
 <% end %>
+<% if @article.image.exists? %>
+  <p><%= image_tag(@article.image.url, size: "720x440") %></p>
+<% end %>
+
 
 </br>
 <p>Created <%= time_ago_in_words(@article.created_at) %> ago</p>

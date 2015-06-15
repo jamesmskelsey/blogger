@@ -2,7 +2,14 @@
 
 <ul id="articles">
   <% @articles.each do |art| %>
-  <li> <%= link_to art.title, article_path(art) %> </li>
+  <li>
+
+    <%= link_to art.title, article_path(art) %>
+    <% if art.image.exists? %>
+      <%= image_tag(art.image.url, size: "192x128") %>
+    <% end %>
+
+  </li>
   <% end %>
 </ul>
 
