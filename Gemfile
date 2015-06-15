@@ -32,6 +32,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use paperclip for attachments
 gem "paperclip"
 
+# User sorcery for authorization
+gem "sorcery"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
